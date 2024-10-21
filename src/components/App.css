@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Cynatar';
+  /* Name your font family */
+  src: url('./Cynatar.otf');
+  /* Locate the .ttf file within your directory*/
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -12,6 +19,7 @@ body {
 }
 
 header {
+  font-family: Cynatar, sans-serif;
   display: flex;
   justify-content: space-between;
   background-color: black;
