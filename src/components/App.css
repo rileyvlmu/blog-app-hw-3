@@ -5,12 +5,19 @@
   /* Locate the .ttf file within your directory*/
 }
 
+@font-face {
+  font-family: 'Rajdhani';
+  src: url('./Rajdhani-Regular.ttf');
+}
+
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: Rajdhani, sans-serif;
+  background-color: rgb(12, 20, 21);
 }
 
 .App {
+  font-family: Rajdhani, sans-serif;
   display: grid;
   grid-template-rows: min-content auto;
   grid-template-columns: 250px auto;
@@ -30,39 +37,69 @@ header {
 }
 
 form {
+  font-family: Rajdhani, sans-serif;
   padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  color: red;
 }
 
 form input,
 form textarea {
+  font-family: Rajdhani, sans-serif;
   margin-bottom: 10px;
   width: 300px;
+  align-items: flex-start;
+
 }
 
 nav,
 article {
   height: 100%;
   padding: 10px;
+  font-family: Rajdhani, sans-serif;
+  font-size: 20px;
+  background-color: rgb(12, 20, 21)
 }
 
 nav {
   background-color: rgb(145, 85, 85);
+  font-weight: bold;
 }
 
 nav p:hover {
   text-decoration: underline;
   cursor: pointer;
+  color: yellow;
+}
+
+nav p:visited {
+  color: purple;
 }
 
 article .date {
+  font-family: Rajdhani, sans-serif;
   font-style: italic;
+  color: rgb(33, 224, 128);
 }
 
 article .body {
+  font-family: Rajdhani, sans-serif;
   white-space: break-spaces;
+  color: rgb(0, 217, 255)
+}
+
+article {
+  color: red;
+}
+
+article .entry {
+  background-color: rgb(33, 224, 128);
+}
+
+h2 {
+  color: yellow;
 }
 
 .error {
